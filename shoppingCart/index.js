@@ -32,7 +32,7 @@ addItem();
 
 function checkItem() {
 
-  $('.shopping-item-toggle').click(event => {
+  $('.shopping-list').on('click','.shopping-item-toggle',event => {
     $(event.currentTarget).closest('li').find('span.shopping-item').toggleClass('shopping-item__checked');
 		
   });
