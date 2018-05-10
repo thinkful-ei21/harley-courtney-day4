@@ -1,6 +1,7 @@
 'use strict';
 
 
+//Adds items to shopping list
 
 function addItem() {
 	
@@ -40,3 +41,29 @@ function checkItem() {
 }
 
 checkItem();
+
+
+
+//Deletes item from shopping list
+
+function deleteItem() {
+
+	$('.shopping-list').on('click','.shopping-item-delete', event => {
+	   $(event.currentTarget).closest('li').remove();
+
+  });
+}
+
+deleteItem();
+
+
+
+
+
+
+
+
+
+
+
+
